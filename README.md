@@ -10,9 +10,12 @@
 </ul>
 
 <h3>Comandos uteis Terraform</h3>
+<p>Arquivo <strong>main.tf</strong>, contem toda infraestrutura que sera alocada na AWS.</p>
+<p>Primeiro exemplo foi criado através da documentacao na pagina oficial da Terraform, apenas foi subistituido o <strong>ami</strong> este define qual sistema operacional estara rodando.</p>
 <ul>
   <li>terraform init == inicializar um novo projeto terraform</li>
   <i>terraform plan == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
+  <i>terraform apply == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
 
 <h3>Comandos uteis:</h3>
 <ul> 
