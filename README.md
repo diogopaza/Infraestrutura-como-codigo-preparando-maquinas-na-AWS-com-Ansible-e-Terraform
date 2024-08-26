@@ -9,8 +9,13 @@
   <li>Reuso</li>
 </ul>
 
-<h3>Comnandos uteis:</h3>
+<h3>Comandos uteis Terraform</h3>
 <ul>
+  <li>terraform init == inicializar um novo projeto terraform</li>
+  <i>terraform plan == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
+
+<h3>Comandos uteis:</h3>
+<ul> 
   <li>python3 --version == exibe a verso do Python 3</li>
   <li>terraform --version == exibe a versao do Terraform</li>
   <li>ansible --version == exibe a verso do Ansible</li>
