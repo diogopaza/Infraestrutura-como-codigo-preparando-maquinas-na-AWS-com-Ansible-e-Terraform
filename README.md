@@ -16,8 +16,8 @@
   <li>terraform init == inicializar um novo projeto terraform</li>
   <i>terraform plan == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
   <i>terraform apply == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
-
-<h3>Comandos uteis:</h3>
+</ul>
+<h3>Comandos uteis gerais:</h3>
 <ul> 
   <li>python3 --version == exibe a verso do Python 3</li>
   <li>terraform --version == exibe a versao do Terraform</li>
@@ -27,8 +27,11 @@
 
 <h4>Instalar e configurar CLI da AWS</h4>
 <p>Após baixar a instalar a AWS CLI e necessario fazer a configuracao.</p>
+<h3>Comandos uteis AWS:</h3>
 <ul>
   <li>aws configure == configura usuario e chave para usar a CLI AWS</li>
+  <li> aws ec2 describe-images --image-ids nomeAmi == exibe os detalhes da ami no terminal</li>
+  <li>aws configure get region == exibe a regiao atual</li>
 </ul>
 
 <h4>Referencias</h4>
