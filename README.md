@@ -1,5 +1,13 @@
 # Infraestrutura-como-codigo-preparando-maquinas-na-AWS-com-Ansible-e-Terraform
-
+<h4>Terraform</h4>
+<p>Com o mesmo script e possivel subir em varios provedores de nuvem.</p>
+<p>Beneficios:</p>
+<ul>
+  <li>Deploy automatizado</li>
+  <li>Controle de versao</li>
+  <li>Velocidade e seguranca</li>
+  <li>Reuso</li>
+</ul>
 
 <h3>Comnandos uteis:</h3>
 <ul>
