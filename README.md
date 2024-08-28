@@ -14,9 +14,12 @@
 <p>Primeiro exemplo foi criado através da documentacao na pagina oficial da Terraform, apenas foi subistituido o <strong>ami</strong> este define qual sistema operacional estara rodando.</p>
 <ul>
   <li>terraform init == inicializar um novo projeto terraform</li>
-  <i>terraform plan == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
+  <i>terraform plan == exibe no terminal oque sera executado, caso tenha algum erro de codificacao exibe o erro no console</i>
   <i>terraform apply == exibe no terminal oque sera executado e definido com o uso do Terraform</i>
+  <i>terraform destroy == destroi os recursos criados</i>
 </ul>
+
+<h4>Acesso via SSH</h4>
 <h3>Comandos uteis gerais:</h3>
 <ul> 
   <li>python3 --version == exibe a verso do Python 3</li>
