@@ -20,12 +20,16 @@
 </ul>
 
 <h4>Acesso via SSH</h4>
+<p>Para o acesso via SSH foi gerada na AWS uma chave, esta e baixada em um arquivo .pem - importante lembrar de executar o comando <strong>chmod 400 nomeArquivo</strong> dessa forma apenas o criador tem acesso de leitura ao arquivo.</p>
+<p>O comando de acesso esta disponivel na AWS == <emph> ssh -i "iac_alura.pem" ubuntu@ec2-54-84-31-123.compute-1.amazonaws.com</emph></p>
+<p>Importante liberar as permissoes no <emph>Security Group</emph> para acesso SSH a instancia desejada.</p>
 <h3>Comandos uteis gerais:</h3>
 <ul> 
   <li>python3 --version == exibe a verso do Python 3</li>
   <li>terraform --version == exibe a versao do Terraform</li>
   <li>ansible --version == exibe a verso do Ansible</li>
   <li>aws --version == exibe a verso CLI da Aws instalada</li>
+  <li>chmod 400 nomeArquivo == defini que o arquivo sera legivel apenas pelo proprietario</li>
 </ul>
 
 <h4>Instalar e configurar CLI da AWS</h4>
