@@ -1,0 +1,22 @@
+- hosts: terraform_ansible   
+  gather_facts: false
+  tasks:
+    # primeros testres com ansible criando arquivo index.html e inicinado um servidor web na porta 8080
+    #- name: criar arquivo
+    #  copy:
+    #    dest: /home/ubuntu/index.html
+    #    content: <h1>Teste ansible</h1> 
+    #- name: servidor HTTP na porta 80
+    #  shell: "nohup busybox httpd -f -p 8080 &"
+  - name: instalando o python3, virtualenv
+    apt:
+     pkg:
+     - python3
+     - virtualenv
+     # atualiza os pacotes
+     update_cache: yes
+  # roda como sudo   
+  become: yes   
+
+ 
+
