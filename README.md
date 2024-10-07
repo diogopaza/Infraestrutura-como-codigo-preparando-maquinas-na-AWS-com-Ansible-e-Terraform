@@ -14,7 +14,7 @@
 <p>Primeiro exemplo foi criado através da documentacao na pagina oficial da Terraform, apenas foi subistituido o <strong>ami</strong> este define qual sistema operacional estara rodando.</p>
 <ul>
   <li>terraform init == inicializar um novo projeto terraform</li>
-  <i>terraform plan == exibe no terminal oque sera executado, caso tenha algum erro de codificacao exibe o erro no console</i>
+  <li>terraform plan == exibe no terminal oque sera executado, caso tenha algum erro de codificacao exibe o erro no console</li>
   <i>terraform apply == faz o provisionamento da maquina no provedor de CLOUD</i>
   <i>terraform destroy == destroi os recursos criados</i>
 </ul>
@@ -37,8 +37,6 @@
   <li>sudo apt-add-repository --yes --update ppa:ansible/ansible</li>
   <li>sudo apt install ansible</li>
 </ul>
-
-
 <h3>Comandos uteis gerais:</h3>
 <ul> 
   <li>python3 --version == exibe a verso do Python 3</li>
@@ -60,6 +58,8 @@
   <li>aws configure == configura usuario e chave para usar a CLI AWS</li>
   <li> aws ec2 describe-images --image-ids nomeAmi == exibe os detalhes da ami no terminal</li>
   <li>aws configure get region == exibe a regiao atual</li>
+  <li>aws configure list == lista as credenciais e profiles disponíveis</li>
+  <li>cat ~/.aws/credentials == exibe as credenciais padroes definidas para a cli da AWS</li>
 </ul>
 
 <h4>Referencias</h4>

@@ -19,12 +19,12 @@ resource "aws_instance" "servidor-spring" {
   key_name = "iac_alura"
   #descreve arquivos com as etapas manuais  
   #user_data = <<-EOF
-  #            #!/bin/bash
-   #           cd /home/ubuntu
-   #           echo "<h1>Feito com TerraformDiogo Senior</h1>" > index.html
-   #           nohup busybox httpd -f -p 8080 &
-   #           EOF
+  #           #!/bin/bash
+  #           cd /home/ubuntu
+  #           echo "<h1>Feito com TerraformDiogo Senior</h1>" > index.html
+  #           nohup busybox httpd -f -p 8080 &
+  #           EOF
   tags = {
-    Name = "novo terraform ansible python"
+    Name = "Terraform ansible python 2*2"
   }
 }

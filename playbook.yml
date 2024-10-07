@@ -1,8 +1,8 @@
 - hosts: terraform_ansible   
   gather_facts: false
   tasks:
-    # primeros testres com ansible criando arquivo index.html e inicinado um servidor web na porta 8080
-    #- name: criar arquivo
+    # Criar ou alterar index.html para rodar na porta 8080
+    #- name: criar-alterar arquivo
     #  copy:
     #    dest: /home/ubuntu/index.html
     #    content: <h1>Teste ansible</h1> 
@@ -12,11 +12,34 @@
     apt:
      pkg:
      - python3
-     - virtualenv
-     # atualiza os pacotes
-     update_cache: yes
-  # roda como sudo   
-  become: yes   
+     - virtualenv    
+     update_cache: yes     
+    become: yes 
+
+  - name: instalando dependencias com pip
+    pip: 
+      virtualenv: /home/ubuntu/tcc/venv
+      name:
+        - django
+        - djangorestframework
+  
+  - name: Verificar versao do Python na virtualenv
+    shell: "/home/ubuntu/tcc/venv/bin/python --version"
+
+  - name: iniciando o ambiente virtual Python
+    shell: '. /home/ubuntu/tcc/venv/bin/activate ; nohup python3 /home/ubuntu/tcc/manage.py runserver 0.0.0.0:8000 &'
+     
+
+  #- name: iniciando o projeto Django
+  #  shell: "python /home/ubuntu/tcc/venv/bin/python /home/ubuntu/tcc/manage.py runserver 0.0.0.0:8000"
+
+  - name: alterando o hosts do settings
+    lineinfile:
+      path: /home/ubuntu/tcc/setup/settings.py
+      regexp: 'ALLOWED_HOSTS'
+      line: 'ALLOWED_HOSTS = ["*"]'
+      backrefs: yes
+
 
  
 
