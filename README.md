@@ -53,6 +53,7 @@
 
 <h4>Instalar e configurar CLI da AWS</h4>
 <p>Após baixar a instalar a AWS CLI e necessario fazer a configuracao.</p>
+<p>ARNs são os identificados únicos dos recursos na AWS. Por exemplo um ECS Cluster e um ARN.</p>
 <h3>Comandos uteis AWS:</h3>
 <ul>
   <li>aws configure == configura usuario e chave para usar a CLI AWS</li>
@@ -60,6 +61,9 @@
   <li>aws configure get region == exibe a regiao atual</li>
   <li>aws configure list == lista as credenciais e profiles disponíveis</li>
   <li>cat ~/.aws/credentials == exibe as credenciais padroes definidas para a cli da AWS</li>
+  <li>aws ecs list-clusters == lista os Clusters ECS</li>
+  <li>aws ecs list-clusters --query "clusterArns[*]" --output text | xargs -n 1 aws ecs describe-clusters --clusters == mostra detalhes completos dos Clusters</li>
+
 </ul>
 
 <h4>Referencias</h4>
