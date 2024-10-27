@@ -63,6 +63,8 @@
   <li>cat ~/.aws/credentials == exibe as credenciais padroes definidas para a cli da AWS</li>
   <li>aws ecs list-clusters == lista os Clusters ECS</li>
   <li>aws ecs list-clusters --query "clusterArns[*]" --output text | xargs -n 1 aws ecs describe-clusters --clusters == mostra detalhes completos dos Clusters</li>
+  <li>aws ecs list-tasks --cluster nomeCluster == lista as tasks do Clusters ECS</li>
+  <li>aws ecs describe-tasks --cluster <seu-cluster> --tasks <id-da-task> == descreve uma task especifica</li>
 
 </ul>
 
